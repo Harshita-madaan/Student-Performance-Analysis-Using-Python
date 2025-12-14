@@ -14,7 +14,24 @@ Practice feature engineering, aggregation, and visualization
 Learn to interpret results without forcing conclusions
 
 🗂 Dataset Description
-The dataset contains synthetic but realistic generated student performance data with the following columns:
+
+The dataset used in this project was sourced from Kaggle and contains **1,000,000 rows of synthetically generated but realistic student performance data**, 
+designed to simulate real-world academic patterns for exploratory data analysis.
+
+🔗 Dataset Link:  
+https://www.kaggle.com/datasets/nabeelqureshitiii/student-performance-dataset
+
+### Data Cleaning & Validation
+Initial data inspection was performed to check for:
+- Missing values
+- Duplicate records
+- Incorrect data types
+- Out-of-range values
+
+The dataset was found to be **already clean and well-structured**, requiring no additional data cleaning. 
+This allowed the analysis to focus on **feature engineering, aggregation, and interpretation**.
+**Note:** This dataset is synthetic and does not represent real student records.
+
 Column Name 	Description
 student_id : Unique identifier for each student
 weekly_self_study_hours	: Average weekly self-study hours
@@ -22,15 +39,17 @@ attendance_percentage	: Attendance percentage
 class_participation	: Participation score (0–10)
 total_score	: Final academic score (0–100)
 grade	Letter : grade derived from total score
-Kaggle dataset link:https://www.kaggle.com/datasets/nabeelqureshitiii/student-performance-dataset
+Kaggle dataset link :
 
 🛠️ Tools & Libraries Used
+
 Python
 Pandas
 NumPy
 Matplotlib
 
 🔧 Feature Engineering
+
 The following new features were created to support deeper analysis:
 Performance Category
 High (score ≥ 80)
@@ -45,6 +64,7 @@ Participation Level
 High, Medium, Low
 
 📈 Exploratory Data Analysis (EDA)
+
 1️⃣ Grades vs Self-Study Hours
 Aggregated average self-study hours per grade
 Visualization: Bar chart
@@ -61,12 +81,14 @@ Insight:
 Class participation remains nearly constant across performance categories, indicating it does not strongly differentiate academic outcomes in this dataset.
 
 🧠 Key Takeaways
+
 Effort (self-study hours) has a clearer relationship with performance than efficiency
 Efficiency metrics must be interpreted carefully
 Not all features contribute meaningfully to performance prediction
 Honest, flat results are valid analytical outcomes
 
 📌 Conclusion
+
 This project demonstrates the importance of:
 Proper feature engineering
 Choosing appropriate aggregation metrics
@@ -75,6 +97,7 @@ Interpreting results without forcing trends
 The analysis reflects real-world data behavior, where not all variables significantly impact outcomes.
 
 🚀 Future Improvements
+
 Add correlation analysis
 Explore multivariate relationships
 Introduce predictive modeling (regression or classification)
