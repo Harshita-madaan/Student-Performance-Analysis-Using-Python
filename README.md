@@ -39,7 +39,7 @@ attendance_percentage	: Attendance percentage
 class_participation	: Participation score (0–10)
 total_score	: Final academic score (0–100)
 grade	Letter : grade derived from total score
-Kaggle dataset link :
+
 
 🛠️ Tools & Libraries Used
 
